@@ -15,8 +15,7 @@ makeCacheMatrix <- function(x = matrix())
     x <<- y
     i <<- NULL
   }
-  # this returns the matrix set into the 
-  "special matrix"
+  # this returns the matrix set into the "special matrix"
   get <- function() x
   
   # this sets the inverse matrix 
@@ -34,9 +33,8 @@ makeCacheMatrix <- function(x = matrix())
 # if the inverse is not yet set, the function solves for the inverse and sets it in the list
 
 cacheSolve <- function(x, ...)  {
-  ## this checks if the cache has any 
-  value
-  m <- x$getinv()
+  ## this checks if the cache has any value
+  i <- x$getinv()
   if(!is.null(i)) 
     ## this returns the cached inverse matrix
   {c
